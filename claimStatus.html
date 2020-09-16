@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Check Claim Status</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+	<div class="topnav">
+		<a class="active" href="/claimStatus.html">Claim Status</a>
+		<a href="/inpatient.html">Inpatient Form</a>
+		<a href="/outpatient.html">Outpatient Form</a>
+	</div>
+</head>
+<body>
+	<div class="container">
+		<form class="claim-form">
+			<h1 style="text-align: center;">CHECK CLAIM STATUS</h1>
+                <div class="row">
+                    <div class="col-25">
+						<label for="memId">Member ID</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="memId" name="memId">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="last">Last Name</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="last" name="last">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="first">First Name</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="first" name="first">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="dob">Date of Birth</label>
+					</div>
+					<div class="col-75">
+						<input type="Date" id="dob" name="dob">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="gender">Gender</label>
+					</div>
+					<div class="col-75">
+						<select name="gender" id="gender">
+							<option value="empty"> </option>
+							<option value="Male">Male</option>
+							<option value="female">Female</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="servStart">Service Start Date</label>
+					</div>
+					<div class="col-75">
+						<input type="Date" id="servStart" name="servStart">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="servEnd">Service End Date</label>
+					</div>
+					<div class="col-75">
+						<input type="Date" id="servEnd" name="servEnd">
+					</div>
+				</div>
+				<div class="row">
+					<h2>Requesting Provider Info</h2>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="provId">Provider ID</label>
+					</div>
+					<div class="col-25">
+						<input type="text"  id="provId" name="provId">
+					</div>
+					<div class="col-75">
+						<input type="button" class="formsubmitbtn" name="select" id="select" value="select">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="provName">Provider Name</label>
+					</div>
+					<div class="col-75">
+						<input type="text"  id="provName" name="provName">
+					</div>
+				</div>
+				<div class="row">
+					<h2>Service Provider Info</h2>
+					<input type="checkbox" id="same" name="same" value="same">
+					<label for="same">Same as Requesting Provider</label>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="servProvId">Provider ID</label>
+					</div>
+					<div class="col-25">
+						<input type="text"  id="servProvId" name="servProvId">
+					</div>
+					<div class="col-75">
+						<input type="button" class="formsubmitbtn" name="select" id="select" value="select">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="servProvName">Provider Name</label>
+					</div>
+					<div class="col-75">
+						<input type="text"  id="servProvName" name="servProvName">
+					</div>
+				</div>
+				<div class="container">
+					<div class="formbutton">
+						<input type="reset" name="rst" class="submitbtn" value="Reset Page" style="margin: 5px; float: right;">
+						<input type="submit" name="submit" class="submitbtn" value="Send to Payer" style="margin: 5px; float: right;">
+					</div>
+				</div>
+		</form>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Inpatient</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+	<div class="topnav">
+		<a href="/claimStatus.html">Claim Status</a>
+		<a class="active" href="/inpatient.html">Inpatient Form</a>
+		<a href="/outpatient.html">Outpatient Form</a>
+	</div>
+</head>
+<body>
+    <div class="container">
+        <form class="patient-form">
+            <h1 style="text-align: center;">Inpatient Form</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="provAdd">1 PROVIDER NAME AND ADDRESS</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="provAdd" name="provAdd">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="payAdd">2 PAY-TO NAME AND ADDRESS</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="payAdd" name="payAdd">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="patCntl">3a PAT. CNTL #</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="patCntl" name="patCntl">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="patCntl">3b. MED. REC. #</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="patCntl" name="patCntl">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="typeBill">4.Type of Bill</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="typeBill">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fedTax">5 FED. TAX NO.</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fedTax" name="fedTax">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="statFrom">6 STATEMENT COVERS PERIOD    FROM</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="statFrom" name="statFrom">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="statTo">   THROUGH</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="statTo" name="statTo">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fUse7">7</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fUse7" name="fUse7">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="patId">8a PATIENT ID</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="patId" name="patId">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="patName">b PATIENT NAME</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="patName" name="patName">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="patAdd">9 PATIENT ADDRESS</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="patAdd" name="patAdd">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="pDOb">10 BIRTHDATE </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="pDOb" name="pDOb">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="sex">11 SEX</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="sex" name="sex">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="admDate">12 ADMISSION DATE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="admDate" name="admDate">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="hr">13 HR</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="hr" name="hr">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="type">14 TYPE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="type" name="type">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="src">15 SRC</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="src" name="src">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="dhr">16 DHR</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="dhr" name="dhr">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="stat">17 STAT</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="stat" name="stat">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <h3 for="cc">CONDITION CODES(18-28)</h3>
+                    </div>
+                </div>
+                <div class="container">
+                    <table style="width:100%">
+                        <tr>
+                            <th><label for="cc18">18</label></th>
+                            <th><label for="cc19">19</label></th>
+                            <th><label for="cc20">20</label></th>
+                            <th><label for="cc21">21</label></th>
+                            <th><label for="cc22">22</label></th>
+                            <th><label for="cc23">23</label></th>
+                            <th><label for="cc24">24</label></th>
+                            <th><label for="cc25">25</label></th>
+                            <th><label for="cc26">26</label></th>
+                            <th><label for="cc27">27</label></th>
+                            <th><label for="cc28">28</label></th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="cc18"></td>
+                            <td><input type="text" name="cc19"></td>
+                            <td><input type="text" name="cc20"></td>
+                            <td><input type="text" name="cc21"></td>
+                            <td><input type="text" name="cc22"></td>
+                            <td><input type="text" name="cc23"></td>
+                            <td><input type="text" name="cc24"></td>
+                            <td><input type="text" name="cc25"></td>
+                            <td><input type="text" name="cc26"></td>
+                            <td><input type="text" name="cc27"></td>
+                            <td><input type="text" name="cc28"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="acdt">29 ACDT STATE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="acdt" name="acdt">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fUse30">30</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fUse30" name="fUse30">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="occC31">31 OCCURRENCE CODE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="occC31" name="occC31">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="occD31">DATE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="occD31" name="occD31">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="occC32">32 OCCURRENCE CODE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="occC32" name="occC32">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="occD32">DATE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="occD32" name="occD32">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="occC33">33 OCCURRENCE CODE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="occC33" name="occC33">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="occD33">DATE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="occD33" name="occD33"><br><br>
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="col-25">
+                        <label for="occC34">34 OCCURRENCE CODE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="occC34" name="occC34">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="occD34">DATE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="occD34" name="occD34">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="occC35">35 OCCURRENCE CODE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="occC35" name="occC35">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="occD35">DATE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="occD35" name="occD35"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="occC36">36 OCCURRENCE CODE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="occC36" name="occC36">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="occD36">DATE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="occD36" name="occD36">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fUse377">37</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fUse37" name="fUse37">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subN">38 SUBSCRIBER NAME AND ADDRESS</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="subN" name="subN"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="vc39">39 VALUE CODES : CODE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="vc39" name="vc39">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="vca39">AMOUNT</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="vca39" name="vca39">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="vc40">40 VALUE CODES : CODE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="vc40" name="vc40">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="vca40">AMOUNT</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="vca40" name="vca40"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="vc41">41 VALUE CODES : CODE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="vc41" name="vc41">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="vca41">AMOUNT</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="vca41" name="vca41"><br><br>
+                    </div>
+                </div>
+                <div class="container">
+                    <table style="width:100%">
+                        <tr>
+                            <th><label for="revCd">42 REV. CD.</label></th>
+                            <th><label for="desc">43 DESCRIPTION</label></th>
+                            <th><label for="hcps">44 HCPS/RATE/HIPPS CODE</label></th>
+                            <th><label for="servDate">45 SERV. DATE</label></th>
+                            <th><label for="servUnits">46 SERV. UNITS</label></th>
+                            <th><label for="total">47 TOTAL CHARGES</label></th>
+                            <th><label for="nonCov">48 NON-COVERED CHARGES</label></th>
+                            <th><label for="fUse49">49</label></th>
+
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="revCd"></td>
+                            <td><input type="text" name="desc"></td>
+                            <td><input type="text" name="hcps"></td>
+                            <td><input type="text" name="servDate"></td>
+                                <td><input type="text" name="servUnits"></td>
+                            <td><input type="text" name="total"></td>
+                            <td><input type="text" name="nonCov"></td>
+                            <td><input type="text" name="fUse49"></td>
+                        </tr>
+                    </table>
+                    <div class="formbutton">
+                        <input type="submit" class="formsubmitbtn" value="ADD" style="float: right;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="payName">50 PAYER NAME</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="payName" name="payName">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="planId">51 HEALTH PLAN ID</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="planId" name="planId">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="relInfo">52 REL. INFO</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="relInfo" name="relInfo">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="asgBen">53 ASG. BEN.</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="asgBen" name="asgBen">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="prior">54 PRIOR PAYMENTS</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="prior" name="prior"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="estDue">55 EST. AMOUNT DUE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="estDue" name="estDue">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="npi56">56 NPI</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="npi56" name="npi56">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="text57">57 HEALTH PLAN ID</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="text57" name="text57">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="oth57">OTHER</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="oth57" name="oth57">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="prvId">PRV ID</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="orvId" name="prvId"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="insName">58 INSURED'S NAME</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="insName" name="insName">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="pRel">59 P. REL.</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="pRel" name="pRel">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="insId">60 INSURED'S UNIQUE ID</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="insId" name="insId">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="grpName">61 GROUP NAME</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="grpName" name="grpName"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="insNo">62 INSURANCE GROUP NO.</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="insNo" name="insNo">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="treat">63 TREATMENT AUTHORIZATION CODES</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="treat" name="treat">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="doc64">64 DOCUMENT CONTROL NUMBER </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="doc64" name="doc64"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="empName">65 EMPLOYER NAME</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="empName" name="empName">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="dx">66 DX </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="dx" name="dx">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="code67">67 PRINCIPLE DIAGNOSIS CODE/OTHER</label>
+                    </div>
+                    <div class="col-75">
+                        <select name="code67" id="code67">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                            <option value="G">G</option>
+                            <option value="H">H</option>
+                            <option value="I">I</option>
+                            <option value="J">J</option>
+                            <option value="K">K</option>
+                            <option value="L">L</option>
+                            <option value="M">M</option>
+                            <option value="N">N</option>
+                            <option value="O">O</option>
+                            <option value="P">P</option>
+                            <option value="Q">Q</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fUse68">68</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fUse68" name="fUse68">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="adx">69 ADMIT DX</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="adx" name="adx"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="pdx">70 PATIENT REASON DX</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="pdx" name="pdx">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="pps">71 PPS CODE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="pps" name="pps">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="eci">72 ECI</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="eci" name="eci">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fUse73">73</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fUse73" name="fUse73"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="ppc">74 PRINCIPLE PROCEDURE CODE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="ppc" name="ppc">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="date74">DATE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="date74" name="date74">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="othpca">a OTHER PROCEDURE CODE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="othpca" name="othpca">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="date74a">DATE</label><br><br>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="date74a" name="date74a">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="othpcb">b OTHER PROCEDURE CODE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="othpc" name="othpc">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="date74b">DATE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="date74b" name="date74b">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="othpcc">c OTHER PROCEDURE CODE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="othpcc" name="othpcc">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="date74c">DATE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="date74c" name="date74c"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="othpcd">d OTHER PROCEDURE CODE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="othpcd" name="othpcd">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="date74d">DATE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="date74d" name="date74d">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="othpce">e OTHER PROCEDURE CODE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="othpce" name="othpce">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="date74e">DATE</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="date74e" name="date74e">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fUse75">75</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fUse75" name="fUse75"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="att">76 ATTENDING</label>
+                        <label for="attnpi">NPI</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="attnpi" name="attnpi">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="qual76">QUAL</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="qual76" name="qual76">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="last76">LAST</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="last76" name="last76">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="first76">FIRST</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="first76" name="first76"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="oper">77 OPERATING</label>
+                        <label for="opernpi">NPI</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="opernpi" name="opernpi">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="qual77">QUAL</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="qual77" name="qual77">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="last77">LAST</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="last77" name="last77">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="first77">FIRST</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="first77" name="first77"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="oth78">78 OTHER</label>
+                        <label for="oth78npi">NPI</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="oth78npi" name="oth78npi">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="qual78">QUAL</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="qual78" name="qual78">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="last78">LAST</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="last78" name="last78">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="first78">FIRST</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="first78" name="first78"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="oth79">79 OTHER</label>
+                        <label for="oth79npi">NPI</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="oth79npi" name="oth79npi">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="qual79">QUAL</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="qual79" name="qual79">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="last79">LAST</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="last79" name="last79">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="first79">FIRST</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="first79" name="first79"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="rem">REMARKS</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="rem" name="rem">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <h3 for="cc81">81 CC </h3>
+                    </div>
+                </div>
+                <table style="width:100%">
+                    <tr>
+                        <th><label for="cc81a">a</label></th>
+                        <th><label for="cc81b">b</label></th>
+                        <th><label for="cc81c">c</label></th>
+                        <th><label for="cc81d">d</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="cc81a"></td>
+                        <td><input type="text" name="cc81b"></td>
+                        <td><input type="text" name="cc81c"></td>
+                        <td><input type="text" name="cc81d"></td>
+                    </tr>
+                </table>
+                <div class="container">
+                    <div class="formbutton">
+                        <input type="submit" class="submitbtn" value="Submit" style="float: right;">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
